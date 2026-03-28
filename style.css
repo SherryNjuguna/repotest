@@ -1,0 +1,139 @@
+
+body {
+    background-color: #f0f2f5; 
+    font-family: sans-serif;    
+    text-align: center;         
+    color: #333333;    
+    max-width: 1000px;           
+    margin: 0 auto;        
+    padding: 20px;
+    box-sizing: border-box; 
+    overflow-x: hidden;
+}
+
+
+img {
+    width: 200px;               
+    height: 200px;
+    max-width: 100%;
+    border-radius: 50%;        
+    object-fit: cover;          
+    border: 5px solid white;    
+}
+
+h1 {
+    color: #2c3e50;            
+}
+
+.content-box {
+    background-color: #ffffff; 
+    border: 1px solid #dcdcdc;  
+    padding: 20px;              
+    margin: 20px auto;         
+    text-align: left;           
+}
+
+
+h2, h3 {
+    color: #e67e22;           
+}
+
+
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;      
+    color: #2c3e50;             
+    font-weight: bold;
+    margin: 10px;              
+}
+
+
+a:hover {
+    color: #e67e22;            
+}
+
+
+.links ul{
+    font-weight: 900;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;                 
+    padding: 10px 0;
+}
+
+
+.hero-container {
+    display: flex;
+    justify-content: center; 
+    gap: 50px;                
+    text-align: left;          
+    margin: 70px 0;
+}
+
+
+.resume-section {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+    margin: 50px 0;
+    text-align: left;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2980b9; 
+    color: white ;   
+    padding: 10px 20px;
+    border-radius: 5px;        
+}
+
+.btn:hover {
+    background-color: #e67e22; 
+    color: white;
+}
+
+.social-buttons {
+    margin-top: 20px;
+}
+
+
+@media (max-width:768px){
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-container {
+        flex-direction: column-reverse; /* Reverses the order of children */
+        text-align: center;
+        align-items: center;
+        margin: 30px 0;
+        gap: 20px;
+    }
+
+    .resume-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .btn {
+        display: block;
+        margin: 10px auto;
+        width: 80%; /* Makes buttons easy to hit */
+    }
+
+}
+
