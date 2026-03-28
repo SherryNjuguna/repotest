@@ -126,7 +126,7 @@ a:hover {
 
     .resume-section {
         flex-direction: column;
-        gap: 40px;
+        gap: 50px;
     }
 
     .btn {
